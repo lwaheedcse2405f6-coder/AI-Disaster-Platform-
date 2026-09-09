@@ -1,0 +1,334 @@
+:root {
+  font-family: "Source Sans 3", sans-serif;
+  color: #e8f1ec;
+  background:
+    radial-gradient(circle at top left, rgba(113, 184, 142, 0.32), transparent 32%),
+    radial-gradient(circle at right, rgba(237, 122, 68, 0.2), transparent 26%),
+    linear-gradient(180deg, #081a17 0%, #102521 100%);
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app-shell {
+  width: min(1240px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 2rem 0 3rem;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+  align-items: stretch;
+  margin-bottom: 1.5rem;
+}
+
+.hero-copy,
+.hero-panel,
+.panel,
+.metric-card,
+.assessment-card,
+.incident-item {
+  background: rgba(6, 19, 18, 0.64);
+  border: 1px solid rgba(188, 222, 207, 0.14);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.16);
+}
+
+.hero-copy,
+.hero-panel,
+.panel {
+  border-radius: 24px;
+  padding: 1.4rem;
+}
+
+.hero-copy h1 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  line-height: 0.98;
+  margin: 0.4rem 0 0.8rem;
+  max-width: 12ch;
+}
+
+.hero-copy p,
+.hero-panel p,
+.summary,
+.metric-card span,
+.incident-item span {
+  color: #b7ccc2;
+}
+
+.hero-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(160deg, rgba(15, 53, 47, 0.85), rgba(121, 54, 28, 0.55));
+}
+
+.hero-panel span,
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.78rem;
+  color: #8cc9a6;
+}
+
+.hero-panel strong {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.4rem;
+  margin: 0.4rem 0;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 1.5rem;
+}
+
+.metric-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.metric-card {
+  border-radius: 18px;
+  padding: 1rem;
+}
+
+.metric-card p,
+.metric-card h3 {
+  margin: 0;
+}
+
+.metric-card h3 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 2rem;
+  margin: 0.3rem 0;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.section-heading h2 {
+  font-family: "Space Grotesk", sans-serif;
+  margin: 0.2rem 0 0;
+}
+
+.assessment-form {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.assessment-form label {
+  display: grid;
+  gap: 0.45rem;
+  color: #dce8e1;
+}
+
+.assessment-form input,
+.assessment-form select,
+.assessment-form button {
+  width: 100%;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 0.8rem 0.9rem;
+}
+
+.assessment-form input,
+.assessment-form select {
+  background: rgba(255, 255, 255, 0.04);
+  color: #f4faf6;
+}
+
+.assessment-form button {
+  background: linear-gradient(90deg, #83ca89, #f29353);
+  color: #062019;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+
+.assessment-form button:disabled {
+  opacity: 0.7;
+  cursor: progress;
+}
+
+.indicator-group {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.indicator-row {
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr 0.8fr 0.6fr;
+  gap: 0.5rem;
+}
+
+.assessment-list,
+.incident-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.map-panel {
+  display: grid;
+  gap: 1rem;
+}
+
+.map-frame-shell {
+  overflow: hidden;
+  min-height: 320px;
+  border-radius: 18px;
+  border: 1px solid rgba(188, 222, 207, 0.14);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.map-frame-shell iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  border: 0;
+}
+
+.map-caption {
+  margin: 0;
+  color: #b7ccc2;
+}
+
+.assessment-card,
+.incident-item {
+  border-radius: 18px;
+  padding: 1rem;
+}
+
+.assessment-topline,
+.score-row,
+.incident-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.score-row {
+  margin: 1rem 0;
+}
+
+.score-row div {
+  display: grid;
+}
+
+.score-row strong {
+  font-size: 1.6rem;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.breakdown-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  margin: 1rem 0;
+  color: #d7e7de;
+}
+
+.risk-pill {
+  align-self: flex-start;
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.risk-pill.low {
+  background: rgba(98, 181, 123, 0.2);
+  color: #8ed0a1;
+}
+
+.risk-pill.moderate {
+  background: rgba(224, 182, 75, 0.2);
+  color: #ffdc8f;
+}
+
+.risk-pill.high,
+.risk-pill.critical {
+  background: rgba(232, 107, 74, 0.2);
+  color: #ffab90;
+}
+
+.action-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: #dce8e1;
+}
+
+.incident-meta {
+  text-align: right;
+  display: grid;
+}
+
+.incident-meta strong {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.4rem;
+}
+
+.error-banner {
+  margin-bottom: 1rem;
+  border-radius: 16px;
+  padding: 0.9rem 1rem;
+  background: rgba(199, 53, 53, 0.18);
+  border: 1px solid rgba(255, 138, 138, 0.35);
+}
+
+@media (max-width: 980px) {
+  .hero,
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .metric-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .app-shell {
+    width: min(100% - 1rem, 100%);
+    padding-top: 1rem;
+  }
+
+  .metric-grid,
+  .breakdown-grid,
+  .indicator-row {
+    grid-template-columns: 1fr;
+  }
+
+  .assessment-topline,
+  .score-row,
+  .incident-item {
+    flex-direction: column;
+  }
+}
