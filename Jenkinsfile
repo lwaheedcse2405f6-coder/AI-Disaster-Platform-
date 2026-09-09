@@ -1,9 +1,5 @@
 pipeline {
-  agent {
-    node {
-      customWorkspace 'C:\\Users\\labee\\Desktop\\AI-Disaster-platform'
-    }
-  }
+  agent any 
 
   options {
     timestamps()
