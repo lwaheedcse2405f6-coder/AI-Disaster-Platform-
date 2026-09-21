@@ -2,7 +2,7 @@
 
 ## Copy to USB
 
-Copy the full `AI-Disaster-platform` folder to your USB drive.
+Copy the full `AI-Disaster-platform` folder to your USB drive:
 
 If you want a smaller transfer, you can remove these folders before copying:
 
@@ -10,7 +10,7 @@ If you want a smaller transfer, you can remove these folders before copying:
 - `frontend\node_modules`
 - `backend\__pycache__`
 
-## On your friend's laptop
+## On your friend's laptop:
 
 1. Copy the project folder from the USB to the desktop or any local folder.
 2. Make sure Python and Node.js are installed.
@@ -24,7 +24,7 @@ If you want a smaller transfer, you can remove these folders before copying:
 - Backend docs: `http://127.0.0.1:8000/docs`
 - Backend health: `http://127.0.0.1:8000/health`
 
-## If PowerShell blocks scripts
+## If PowerShell blocks scripts:
 
 Use Command Prompt or run the `.bat` files directly by double-clicking them.
 
