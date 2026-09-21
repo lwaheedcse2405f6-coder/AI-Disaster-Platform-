@@ -1,4 +1,4 @@
-# AI Climate Risk and Disaster Impact Assessment Platform
+# AI Climate Risk and Disaster Impact Assessment Platform #
 
 Submission-oriented starter platform for climate risk analysis with:
 
