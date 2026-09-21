@@ -1,6 +1,6 @@
-# Transfer Guide
+# Transfer Guide#
 
-## Copy to USB
+## Copy to USB##
 
 Copy the full `AI-Disaster-platform` folder to your USB drive:
 
