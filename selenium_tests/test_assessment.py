@@ -33,8 +33,8 @@ try:
 
     # Submit the assessment
     submit_button = driver.find_element(
-        By.XPATH, "//button[contains(., 'Run AI Assessment')]"
-    )
+    By.XPATH, "//form[@class='assessment-form']//button[@type='submit']"
+    )    
     submit_button.click()
 
     # Wait for the new assessment to appear
