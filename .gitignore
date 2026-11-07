@@ -12,3 +12,5 @@ frontend/dist/
 # Jenkins runtime output
 backend-jenkins-*.log
 jenkins-*-report.txt
+
+candidate_pairs.tsv
